@@ -1,2 +1,3 @@
 name: BlueCreeper512
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
