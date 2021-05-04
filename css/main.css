@@ -48,7 +48,7 @@ ul.posts li {
 }
 
 @font-face {
-    font-family: 'Nunito';
+    font-family: 'Nunito', sans-serif;
     src: url("/Nuito-Light.ttf") format('truetype');
     font-weight: light;
     font-style: light;
