@@ -9,6 +9,7 @@ nav ul, footer ul {
     font-weight: bold;
 }
 nav ul li, footer ul li {
+    font-family:'Segoe UI';
     display: inline;
     margin-right: 20px;
 }
@@ -24,11 +25,13 @@ h1 {
     font-family:'Segoe UI';
 }
 p {
+    font-family:'Segoe UI';
     font-size: 1.5em;
     line-height: 1.4em;
     color: #0185DB;
 }
 footer {
+    font-family:'Segoe UI';
     border-top: 1px solid #0185DB;
     font-size: .8em;
 }
@@ -40,5 +43,6 @@ ul.posts {
 }
 
 ul.posts li {
+    font-family:'Segoe UI';
     list-style: none;
 }
