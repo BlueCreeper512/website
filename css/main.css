@@ -47,5 +47,5 @@ ul.posts li {
     font-family: 'Nunito';
     src: url("/Nuito-Light.ttf") format('truetype');
     font-weight: light;
-    font-style: normal;
+    font-style: light;
 }
