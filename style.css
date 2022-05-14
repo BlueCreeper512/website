@@ -28,24 +28,24 @@ body {
 
 #domains {
     font-size: 14px;
-    background-color: #F1F1F1;
+    background-color: #277FC9;
 }
 
 a {
-    color: #0077aa;
+    color: #277FC9;
     text-decoration: none;
 }
 
 a:hover {
-    color:#4882e0;
+    color:#277FC9;
 }
 
 h1, h2, h3 {
     line-height: 1.2;
 }
 
-.erisa {
-    color: #C63B65;
+.bluecreeper512 {
+    color: #277FC9;
 }
 
 
