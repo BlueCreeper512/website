@@ -1,0 +1,55 @@
+body {
+    background-color: #323535;
+    margin: 60px auto;
+    width: 70%;
+}
+nav ul, footer ul {
+    font-family: 'Nunito', sans-serif;
+    padding: 0px;
+    list-style: none;
+}
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+a {
+    text-decoration: none;
+    color: #0185DB;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 3em;
+    color: #0185DB;
+}
+p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.4em;
+    color: #0185DB;
+}
+footer {
+    font-family: 'Nunito', sans-serif;
+    border-top: 1px solid #0185DB;
+    font-size: .8em;
+}
+
+ul.posts { 
+    font-family: 'Nunito', sans-serif;
+    color: #0185DB;
+    margin: 20px auto 40px; 
+    font-size: 1.5em;
+}
+
+ul.posts li {
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'Nunito', sans-serif;
+    src: url("/Nuito-Light.ttf") format('truetype');
+    font-weight: light;
+    font-style: light;
+}
