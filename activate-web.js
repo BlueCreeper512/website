@@ -6,7 +6,7 @@ var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (
 var _ActivateWebElement_options;
 export const DEFAULT_STYLES = `
 	* {
-		user-select: none;
+		user-select: all;
 	}
 
 	:host {
