@@ -1,4 +1,5 @@
-body.old {
+.old,
+body {
     background-color: #323535;
     margin: 60px auto;
     width: 70%;
