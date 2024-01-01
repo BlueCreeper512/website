@@ -1,0 +1,26 @@
+
+//
+// VARIABLES
+//
+
+// Colors
+$blue: #3391ff;
+
+// Grays
+$black: #FFFFFF;
+$darkerGray: #FFFFFF;
+$darkGray: #FFFFFF;
+$gray: #FFFFFF;
+$lightGray: #2b2b2b;
+$white: #1e1e1e;
+
+// Font stacks
+@import 'https://fonts.googleapis.com/css2?family=Inter&display=swap';
+$inter: Inter, sans-serif;
+
+// Mobile breakpoints
+@mixin mobile {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}
