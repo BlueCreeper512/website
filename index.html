@@ -8,21 +8,18 @@ I'm not the best at web development, if anything looks unusual then feel free to
 -->
 
 <head>
-<!-- other head tags -->
 	<script type="module" src="/activate-web.js"></script>
-	
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
-    <meta charset="UTF-8">
-    <meta content="BlueCreeper512" property="og:title">
-    <meta content="BlueCreeper512's Personal Website" name="description">
-    <meta content="BlueCreeper512's Personal Website" property="og:description">
-    <meta content="Home | BlueCreeper512" property="og:site_name">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="details-polyfill.js"></script>
-    <link rel="preload" href="/fonts/inter-v8-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="style.css">
-    <title>BlueCreeper512</title>
-	
+    	<meta charset="UTF-8">
+    	<meta content="BlueCreeper512" property="og:title">
+    	<meta content="BlueCreeper512's Personal Website" name="description">
+    	<meta content="BlueCreeper512's Personal Website" property="og:description">
+    	<meta content="Home | BlueCreeper512" property="og:site_name">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<script src="details-polyfill.js"></script>
+    	<link rel="preload" href="/fonts/inter-v8-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    	<link rel="stylesheet" href="style.css">
+    	<title>BlueCreeper512</title>
 </head>
 
 <body>
@@ -69,6 +66,29 @@ I'm not the best at web development, if anything looks unusual then feel free to
 	<p>
 		#EraseHate 🏳️‍🌈
 	</p>
+
+	<h2>Currently Listening 🔊</h2>
+	<iframe
+		frameborder="0"
+		height="380"
+		id="github-iframe"
+		src=""
+		width="100%"
+	></iframe>
+	<script>
+		fetch(
+			"https://api.github.com/repos/BlueCreeper512/spotify-widget/contents/player.min.html"
+		)
+			.then(function (response) {
+				return response.json();
+			})
+			.then(function (data) {
+				var iframe = document.getElementById(
+				"github-iframe");
+				iframe.src =
+					"data:text/html;charset=utf-8;base64," + encodeURIComponent(data["content"]);
+			});
+	</script>
 
         <details>
             <summary>
