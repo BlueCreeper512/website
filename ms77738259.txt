@@ -1,5 +1,0 @@
-﻿{
-  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
-  "Domain": "bluecreeper512.me",
-  "Id": "3441e757-d769-47a3-995c-7ab709ce534e"
-}

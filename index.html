@@ -1,48 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<script type="module" src="/activate-web.js"></script>
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
     <meta charset="UTF-8">
     <meta content="BlueCreeper512" property="og:title">
     <meta content="BlueCreeper512's Personal Website" name="description">
     <meta content="BlueCreeper512's Personal Website" property="og:description">
     <meta content="Home | BlueCreeper512" property="og:site_name">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="details-polyfill.js"></script>
+    <script type="module" src="/scripts/activate-web.js"></script>
+    <script src="/scripts/activate-web-user-agent.js"></script>
+    <script src="/scripts/clock.js" defer></script>
+    <script src="/scripts/visitor-counter.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" defer></script>
+    <script src="/scripts/lastfm.js" defer></script>
     <link rel="preload" href="/fonts/inter-v8-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="/fonts/perfect-dos-vga-437-win.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="/fonts/DS-DIGIB.TTF" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
     <title>BlueCreeper512's Personal Website</title>
 </head>
 
 <body>
     <main>
 	    <activate-web name="Windows" gotoText="Settings" gotoLink=""></activate-web>
-        <div style="margin-left:30%">
+        <div class="topnav">
+            <a class="active "href="/index.html">Home</a>
+            <a href="/underconstruction.html">About</a>
+            <a href="/underconstruction.html">Blog</a>
+            <a href="/hwsmp/index.html">HWSMP</a>
+            <a href="/specs.html">Specs</a>
+            <a href="/underconstruction.html">Renders</a>
+            <a href="/underconstruction.html">Contact</a>
+        </div>
         <h1 class="bluecreeper512">
-            BlueCreeper512!
+            <div class="marquee">
+                <div class="marquee_content">
+                    <img src="/images/pfp/Anthony-G256_pfp_square.gif" style="height: 90px; width: auto;"></img>
+                    <p style="height: 90px; line-height: 90px">BlueCreeper512's Very Cool Website</p>
+                </div>
+                <div class="marquee_content" aria-hidden="true">
+                    <img src="/images/pfp/Anthony-G256_pfp_square.gif" style="height: 90px; width: auto;"></img>
+                    <p style="height: 90px; line-height: 90px">BlueCreeper512's Very Cool Website</p>
+                </div>
+            </div>
         </h1>
-        <div class="sidenav" style="width:30%">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-        </div>
-        <div class="main">
-            <p>This is a test sentence.</p>
-        </div>
-        </div>
-    </main>
 
+        <p>Greetings, ladies and gentlemen, boys and girls, bots and aliens, and everyone and everything in between and outside those categories, I'm <span class="bluecreeper512">BlueCreeper512</span>. Welcome to my little corner of the information superhighway, feel free to look around!</p>
+
+        <div id="widgets" style="display: flex; justify-content: space-between;">
+            <div id="clock-container">
+                <div id="clock-label">Local time (UTC+9):</div>
+                <div id="clock"></div>
+            </div>
+            <div id="visitor-counter">
+               <div>You are visitor:</div>  
+                <span id="visitor-count">Loading...</span>
+            </div>
+            <div id="lastfmcontainer">
+            <div class="album-art">
+                <a href="#" id="trackart"><img decoding="async" id="trackart" src="#"></a>
+                </a>
+            </div>
+            <div class="track-info">
+                <div id="tracktitle"></div>
+                <div class="line" style="border-color: #0f0"></div>
+                <div id="trackartist"></div>
+                <div id="playstatus"></div>
+            </div>
+            </div>
+        </div>
+        <br>
     <footer>
-        <div style="margin-left:30%">
-        <p>
-            <hr>
-            <a href="/">Home</a> <span class="smallbar">|</span>
-            <a href="/specs">Device Specs</a> <span class="smallbar">|</span>
-    	    <a href="https://blog.bluecreeper512.com/">Blog</a> <span class="smallbar">|</span>	
-            <a href="mailto:bc512@bluecreeper512.com">Contact</a>
-        </p>
+        <div class="web_badges">
+            <div class="line"></div>
+            <p>
+                <a href="https://firefox.com"><img src="images/web_badges/firefox_badge.gif" alt="Get Firefox badge" style="height: auto; width: auto;"></a>
+                <a href="https://code.visualstudio.com"><img src="images/web_badges/vsc_badge.png" alt="Made with Visual Studio Code badge" style="height: auto; width: auto;"></a>
+                <a href="https://windows.com"><img src="images/web_badges/windows_badge.gif" alt="Made with Windows badge" style="height: auto; width: auto;"></a>
+                <a href="https://archive.org"><img src="images/web_badges/internetarchive_badge.gif" alt="Internet Archive badge" style="height: auto; width: auto;"></a>
+                <a href="https://ublockorigin.com"><img src="images/web_badges/ublock_origin_badge.png" alt="uBlock Origin Now badge" style="height: auto; width: auto;"></a>
+                <a href="https://bitwarden.com"><img src="images/web_badges/bitwarden_badge.gif" alt="Bitwarden badge" style="height: auto; width: auto;"></a>
+                <a href="https://store.steampowered.com"><img src="images/web_badges/steam_badge.gif" alt="Play with Steam badge" style="height: auto; width: auto;"></a>
+                <a href="https://open.spotify.com/"><img src="images/web_badges/spotify_badge.gif" alt="Spotify badge" style="height: auto; width: auto;"></a>
+                <img src="images/web_badges/worldwideweb_badge.gif" alt="World Wide Web badge" style="height: auto; width: auto;">
+                <img src="images/web_badges/this_website_sucks_badge.gif" alt="This website sucks badge" style="height: auto; width: auto;">
+                <img src="images/web_badges/antinazi_badge.png" alt="Anti-Nazi badge" style="height: auto; width: auto;">
+                <img src="images/web_badges/ukraine_badge.png" alt="Defend Ukraine badge" style="height: auto; width: auto;">
+                <img src="images/web_badges/progress_pride_badge.png" alt="Progress pride badge" style="height: auto; width: auto;
+                ">
+                <img src="images/web_badges/he_him_badge.png" alt="He/Him badge" style="height: auto; width: auto;">
+                <img src="images/web_badges/alien_badge.gif" alt="Encounter an alien badge" style="height: auto; width: auto;">
+                <img src="images/web_badges/bookmark_this_page_badge.gif" alt="Bookmark this page badge" style="height: auto; width: auto;">
+                <img src="images/web_badges/best_viewed_open_eyes_badge.gif" alt="Best viewed with open eyes badge" style="height: auto; width: auto;">
+                <img src="images/web_badges/best_viewed_computer.gif" alt="Best viewed on a computer badge" style="height: auto; width: auto;">
+            </p>
+            <div class="line"></div>
         </div>
     </footer>
 </body>

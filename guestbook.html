@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+    <meta charset="UTF-8">
+    <meta content="BlueCreeper512" property="og:title">
+    <meta content="BlueCreeper512's Personal Website" name="description">
+    <meta content="BlueCreeper512's Personal Website" property="og:description">
+    <meta content="Home | BlueCreeper512" property="og:site_name">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/scripts/details-polyfill.js"></script>
+    <script type="module" src="/scripts/activate-web.js"></script>
+    <script src="/scripts/activate-web-user-agent.js"></script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <link rel="preload" href="/fonts/inter-v8-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/style.css">
+    <title>BlueCreeper512's Personal Website</title>
+</head>
+
+<body>
+  <h1>Guestbook</h1>
+
+  <form id="guestbookForm">
+    <input type="text" id="name" placeholder="Name" required><br>
+    <textarea id="message" placeholder="Message" required></textarea><br>
+    <div class="cf-turnstile" data-sitekey="0x4AAAAAAB5k6WuSMRS-gb9j" data-callback="onTurnstileSuccess"
+ data-error-callback="onTurnstileError"></div>
+    <button type="submit" id="submitButton" style="display:none;">Post</button>
+  </form>
+  <div id="entries"></div>
+  <script src="/scripts/guestbook.js"></script>
+</body>
+</html>

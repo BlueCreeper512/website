@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Comic Sans';
+    src: local(''),
+            url('../fonts/comic_sans_ms.ttf') format('truetype');
+}
+
+.marquee {
+    color: yellow;
+    font-family: 'Comic Sans',
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji" !important;
+    border-radius: 0px !important;
+}

@@ -1,0 +1,286 @@
+body {
+    position: relative;
+    background-image: url('/images/Anthony-G256_Oliver-G128_light_ver.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main {
+    margin: 100px auto;
+    max-width: 725px;
+    line-height: 1.6;
+    font-size: 18px;
+    padding: 30px;
+    font-family: "Inter",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji";
+    border-radius: 6px;
+    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.smallbar {
+    font-family: -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Helvetica,
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji";
+}
+
+#domains {
+    font-size: 14px;
+    background-color: #277FC9;
+}
+
+a {
+    color: #277FC9;
+    text-decoration: none;
+}
+
+a:hover {
+    color:black;
+}
+
+h1, h2, h3 {
+    line-height: 0.8;
+}
+
+.bluecreeper512 {
+    color: #277FC9;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 0px;
+}
+
+dl {
+    word-wrap:break-word
+}
+
+li::before {
+    content: "- ";
+}
+
+/* inter-regular - latin */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    unicode-range: U+0-7C,U+7D-FFFF;
+    src: local(''),
+            url('../fonts/inter-v8-latin-regular.woff2') format('woff2') /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+
+@font-face {
+    font-family: 'DOS';
+    src: local(''),
+            url('../fonts/perfect-dos-vga-437-win.ttf') format('truetype'); 
+    }
+
+@font-face {
+    font-family: 'LCD';
+    src: local(''),
+            url('../fonts/DS-DIGIB.TTF') format('truetype');
+}
+
+.hcaptcha-disclaimer {
+    font-size: 16px;
+}
+
+.web_badges {
+    text-align: center;
+}
+
+.marquee {
+  --gap: 1rem;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: auto;
+  gap: var(--gap);
+  align-items: center;
+  padding: 0.1em 0;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.7);
+  font-family: "DOS",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji";
+}
+
+.marquee_content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll 10s linear infinite
+}
+
+.marquee_content p {
+  margin: 0;
+  line-height: 1;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+iframe {
+    display: block;
+    border-style:none;
+    margin: 0 auto;
+    overflow-x: scroll;
+    max-width: 600px
+}
+
+#status-bar {
+  display: flex;
+  align-items: stretch; 
+  gap: 10px; 
+  justify-content: flex-start;
+}
+
+#clock-container, #visitor-counter, #lastfmcontainer { 
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 12px;
+  border-radius: 6px;
+  color: #0f0;
+  font-family: "LCD", 
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Helvetica,
+      Arial,
+      sans-serif,
+      "Apple Color Emoji",
+      "Segoe UI Emoji";
+  font-size: clamp(0.8rem, 3vw, 1.1rem);
+  line-height: 1.2;
+  word-break: break-word;
+  white-space: normal;
+}
+
+#lastfmcontainer {
+    flex-direction: row;            
+    align-items: center;     
+    max-width: 295px;
+    gap: 0.5em;         
+}
+
+#lastfmcontainer img {
+  height: 2em;                  
+  width: auto;
+  border-radius: 4px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.track-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.2;
+}
+
+.topnav {
+  overflow: hidden;
+  border-radius: 6px;
+  background-color: rgba(214, 209, 209, 0.7);
+}
+
+.topnav a {
+  float: left;
+  color: #277FC9;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  color: black;
+}
+
+.topnav a.active {
+  color: black;
+}
+
+.line {
+    border-bottom: 2px solid black;
+}
+
+@media (prefers-color-scheme: dark) {
+    main, input, textarea {
+        background-color: rgba(30, 30, 30, 0.75);
+        color: white;
+    }
+
+    input, textarea {
+        border-radius: 1px;
+        border-color: #75374A;
+    }
+
+    #domains {
+        background-color: #2b2b2b;
+        word-wrap: break-word;
+    }
+    
+    a {
+        color: #3391ff;
+    }
+
+    .topnav.adaptive {
+        background-color: #111;
+    }
+
+    .line {
+        border-bottom: 2px solid white;
+    }
+
+    body {
+        background-image: url('/images/Anthony-G256_Oliver-G128_dark_ver.jpg');
+    }
+
+    .topnav {
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .topnav a:hover {
+        color: #f1f1f1;
+    }
+
+    .topnav a.active {
+        color: #f1f1f1;
+    }
+
+    a:hover {
+    color:#f1f1f1;
+}
+
+}

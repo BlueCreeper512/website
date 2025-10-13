@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    margin: 0;
+    overflow: hidden;
+    background: #111;
+    height: 100vh;
+  }
+  img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    user-select: none;
+    pointer-events: none;
+  }
+  button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 10;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+</style>
+</head>
+<body>
+  <img id="dvd" src="/images/pfp/Anthony-G256_pfp_square.gif" alt="logo">
+  <button id="toggle">Pause</button>
+
+  <script>
+    const img = document.getElementById("dvd");
+    const btn = document.getElementById("toggle");
+
+    let x = 100, y = 100; // start position
+    let dx = 2, dy = 2;   // direction/speed
+    let moving = true;
+    const original = { x, y };
+
+    function animate() {
+      if (moving) {
+        x += dx;
+        y += dy;
+
+        if (x + img.width >= window.innerWidth || x <= 0) dx *= -1;
+        if (y + img.height >= window.innerHeight || y <= 0) dy *= -1;
+
+        img.style.left = x + "px";
+        img.style.top = y + "px";
+      }
+      requestAnimationFrame(animate);
+    }
+
+    btn.addEventListener("click", () => {
+      if (moving) {
+        moving = false;
+        x = original.x;
+        y = original.y;
+        img.style.left = x + "px";
+        img.style.top = y + "px";
+        btn.textContent = "Resume";
+      } else {
+        moving = true;
+        btn.textContent = "Pause";
+      }
+    });
+
+    animate();
+  </script>
+</body>
+</html>
