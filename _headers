@@ -1,16 +1,9 @@
 /*
     Permissions-Policy: interest-cohort=()
     X-Content-Type-Options: nosniff
-    Content-Security-Policy: default-src 'self' 'unsafe-inline' https://bluecreeper512.com https://*.bluecreeper512.workers.dev https://static.cloudflareinsights.com https://cloudflareinsights.com https://ajax.googleapis.com object-src 'none'
+    Content-Security-Policy: default-src 'self' 'unsafe-inline' https://bluecreeper512.com https://*.bluecreeper512.workers.dev https://static.cloudflareinsights.com https://cloudflareinsights.com https://ajax.googleapis.com https://lastfm.freetls.fastly.net https://4.bp.blogspot.com https://ws.audioscrobbler.com object-src 'none'
     X-Frame-Options: SAMEORIGIN
     Referrer-Policy: origin-when-cross-origin
-
-https://:project.pages.dev/*
-  Link: <https://erisa.uk/:splat>; rel="canonical"
-  X-Robots-Tag: noindex
-
-https://:commit.:project.pages.dev/*
-  Link: <https://erisa.uk/:splat>; rel="canonical"
 
 /LICENSE 
     Content-Type: text/plain
