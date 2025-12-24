@@ -163,7 +163,7 @@ iframe {
   justify-content: flex-start;
 }
 
-#clock-container, #visitor-counter, #lastfmcontainer { 
+#visitor-counter, #lastfmcontainer, #clock-container { 
   display: flex;
   flex-direction: column; 
   justify-content: center;
@@ -284,3 +284,5 @@ iframe {
 }
 
 }
+
+

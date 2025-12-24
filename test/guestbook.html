@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Guestbook</title>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</head>
+<body>
+  <h1>Guestbook</h1>
+
+  <form id="guestbookForm">
+    <input type="text" id="name" placeholder="Name" required><br>
+    <textarea id="message" placeholder="Message" required></textarea><br>
+    <div class="cf-turnstile" data-sitekey="0x4AAAAAAB5k6WuSMRS-gb9j"></div>
+    <button type="submit">Post</button>
+  </form>
+
+  <div id="entries"></div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
